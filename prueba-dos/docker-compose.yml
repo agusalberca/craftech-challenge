@@ -1,0 +1,21 @@
+version: '3'
+services:
+  django:
+    build:
+      context: ./django-backend/app
+      dockerfile: Dockerfile
+    ports:
+      - 8000:8000
+    volumes:
+      - ./django-backend/app:/app
+    depends_on:
+      - react
+
+  react:
+    build:
+      context: ./react-frontend
+      dockerfile: Dockerfile
+    ports:
+      - 80:80
+    volumes:
+      - ./react-frontend:/app
