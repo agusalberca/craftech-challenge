@@ -14,14 +14,14 @@ jobs:
       - uses: actions/checkout@v2
       - name: Install dependencies
         run: |
-          sudo apt-get update
           sudo apt-get install -y build-essential
 
       - name: Build
         run: |
-          cd prueba-tres
           docker build -t nginx .
 
       - name: Deploy
         run: |
           docker push nginx
+
+working-directory: prueba-tres
