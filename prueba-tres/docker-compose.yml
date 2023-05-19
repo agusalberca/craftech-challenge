@@ -1,0 +1,10 @@
+version: '3'
+services:
+  nginx:
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    ports:
+      - 80:80
+    volumes:
+      - ./nginx/index.html:/usr/share/nginx/html/index.html
