@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - 'prueba-tres/**'
+      - '.github/workflows/main.yml'
 
 jobs:
   build:
