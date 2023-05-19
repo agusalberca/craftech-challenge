@@ -5,3 +5,5 @@ En el .yml se consideran cambios hechos en:
 
 Se utilizo docker-compose para centralizar el buildeo y dar pie a la facil inclusion de nuevos servicios y herramientas.
 > Nota: Quizas no era necesario para el caso pero me parece una buena práctica y facilita a un solo comando (docker-compose up -d --build) el buildeo y deploy de la app.
+
+> Posibles mejoras: reducir los archivos del buildeo unicamente al directorio /prueba-tres y no a todo el repositorio.
