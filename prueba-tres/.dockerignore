@@ -1,0 +1,5 @@
+# Ignorar todos los archivos y directorios en la raíz de /prueba-tres
+/*
+
+# Permitir el directorio /nginx y su contenido
+!/nginx/
