@@ -19,10 +19,11 @@ jobs:
 
       - name: Build
         run: |
+          cd prueba-tres
           docker-compose build
 
       - name: Deploy
         run: |
+          cd prueba-tres
           docker-compose up -d
 
-working-directory: prueba-tres
