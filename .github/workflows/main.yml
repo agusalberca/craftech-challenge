@@ -19,9 +19,10 @@ jobs:
 
       - name: Build
         run: |
-          cd prueba-tres
-          docker build -t nginx .
+          docker-compose build
 
       - name: Deploy
         run: |
-          docker push nginx
+          docker-compose up -d
+
+working-directory: prueba-tres
