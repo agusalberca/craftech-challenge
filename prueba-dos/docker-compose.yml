@@ -6,8 +6,9 @@ services:
       dockerfile: Dockerfile
     ports:
       - 8000:8000
-    volumes:
-      - ./django-backend/app:/app
+    # solo para desarrollo
+    # volumes:
+    #   - ./django-backend/app:/app
     depends_on:
       - react
 
@@ -17,5 +18,3 @@ services:
       dockerfile: Dockerfile
     ports:
       - 80:80
-    volumes:
-      - ./react-frontend:/app

@@ -20,7 +20,7 @@ from django.http import HttpResponse
 
 
 def homePageView(request):
-    return HttpResponse("Hello, World! Django app made by Agustin Alberca for craftech devops challenge")
+    return HttpResponse("Hello, World! Django app made by Agustin Alberca for craftech devops challenge.")
 
 urlpatterns = [
     # path('admin/', admin.site.urls),
